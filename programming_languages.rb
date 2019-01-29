@@ -6,8 +6,11 @@ def reformat_languages(languages)
     keys_1.each do |langs,keys_2|
       keys_2.each do |types,keys_3|
         a_hash[langs] = { type: keys_3 }
-        a_hash[langs][:style] ||= [ ]
-        a_hash[langs][:style] << styles
+        if a_hash[langs][:style].key? == true
+          a_hash[langs][:style] << styles
+        else
+          a_hash[langs][:style] = styles
+        end
         binding.pry
       end
     end
