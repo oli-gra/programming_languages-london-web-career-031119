@@ -17,3 +17,17 @@ def reformat_languages(languages)
   end
   a_hash
 end
+
+def reformat_languages(languages)
+  new_hash = {}
+  languages.each do |style, lang|
+    language.each do |name, type|
+      if new_hash[name]
+        new_hash[name][:style] << style
+      else
+        new_hash[name] = {style: [style], type: type[:type] }
+      end
+    end 
+  end
+  new_hash
+end	end
