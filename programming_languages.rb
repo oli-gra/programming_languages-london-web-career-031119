@@ -8,6 +8,7 @@ def reformat_languages(languages)
         a_hash[langs] = { type: keys_3 }
         a_hash[langs][:style] ||= [ ]
         a_hash[langs][:style] << styles
+        binding.pry
       end
     end
   end
