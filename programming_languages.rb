@@ -10,7 +10,6 @@ def reformat_languages(languages)
         else
           a_hash[langs] = { type: keys_3, style: styles }
         end
-        binding.pry
       end
     end
   end
