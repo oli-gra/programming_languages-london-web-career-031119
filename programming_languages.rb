@@ -5,7 +5,7 @@ def reformat_languages(languages)
   languages.each do |styles,keys_1|
     keys_1.each do |langs,keys_2|
       keys_2.each do |types,keys_3|
-          a_hash[langs] = { type: keys_3, style: styles }
+          a_hash[langs] = { type: keys_3, style: [styles] }
       end
     end
   end
