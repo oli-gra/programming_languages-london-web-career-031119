@@ -8,5 +8,4 @@ def reformat_languages(languages)
       end
     end
   end
-  a_hash
 end
